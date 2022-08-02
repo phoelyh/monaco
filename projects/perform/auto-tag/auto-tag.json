@@ -1,0 +1,29 @@
+{
+  "name": "{{ .name }}",
+  "description": null,
+  "rules": [
+    {
+      "type": "SERVICE",
+      "enabled": true,
+      "valueFormat": null,
+      "normalization": "LEAVE_TEXT_AS_IS",
+      "propagationTypes": [],
+      "conditions": [
+        {
+          "key": {
+            "attribute": "SERVICE_NAME",
+            "type": "STATIC"
+          },
+          "comparisonInfo": {
+            "type": "STRING",
+            "operator": "EXISTS",
+            "value": null,
+            "negate": false,
+            "caseSensitive": null
+          }
+        }
+      ]
+    }
+  ],
+  "entitySelectorBasedRules": []
+}
